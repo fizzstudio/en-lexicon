@@ -1,4 +1,4 @@
-import inflectors = require("en-inflectors"); const Inflectors = inflectors.Inflectors;
+import * as inflectors from "@fizz/en-inflectors"; const Inflectors = inflectors.Inflectors;
 import {LexiconType} from "./lexicon";
 import lexicon from './lexicon';
 
@@ -8,7 +8,7 @@ const extend = function(terms:LexiconType):undefined{
 		return;
 	}
 	for(let term in terms) {
-		if(!terms.hasOwnProperty(term)) continue;
+		if(!Object.prototype.hasOwnProperty.call(terms, term)) continue;
 		if(!terms[term]) continue;
 
 		if(~terms[term].split("|").indexOf("VB")||~terms[term].split("|").indexOf("VBP")) {

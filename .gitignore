@@ -1,15 +1,28 @@
-# OS generated files #
-######################
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.dbma
+// .gitignore
+_ignore/
+# Cache files  
+.eslintcache
+.npm
+*.tsbuildinfo
 
-# Node.js Files #
-######################
-/node_modules/*
-*.log
-*dist
+# Directories
+## This is the build process will output code.
+dist/           
+## The original reason we're here!
+node_modules/
+
+# Env files      
+## A good safeguard against accidentally publishing
+##  private information, including security keys
+.vscode/
+.env.           
+.env.test
+
+# Logs
+*.log logs npm-debug.log*
+
+# Misc files
+## experiments and references _ignore/        
+## Macs often create this file
+.DS_Store       
+## Personal project notes, not my reference notes.md
