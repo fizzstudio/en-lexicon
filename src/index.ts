@@ -1,6 +1,6 @@
 import * as inflectors from "@fizz/en-inflectors"; const Inflectors = inflectors.Inflectors;
-import {LexiconType} from "./lexicon";
-import lexicon from './lexicon';
+import {LexiconType} from "./lexicon.js";
+import lexicon from './lexicon.js';
 
 const extend = function(terms:LexiconType):undefined{
 	if(typeof terms !== "object" || terms === null) {
