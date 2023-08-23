@@ -6,6 +6,7 @@
     "access": "restricted",
     "registry": "https://npm.fizz.studio"
   },
+  "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "module": "dist/en-lexicon.esm.js",
@@ -33,22 +34,22 @@
   "author": "Alex Corvi <alex@arrayy.com>",
   "license": "MIT",
   "dependencies": {
-    "@fizz/en-inflectors": "^1.0.7"
+    "@fizz/en-inflectors": "^1.0.15"
   },
   "devDependencies": {
+    "@rollup/plugin-eslint": "^8.0.1",
+    "@rollup/plugin-node-resolve": "^13.0.6",
     "@types/mocha": "^2.2.39",
     "@types/node": "^7.0.7",
     "afinn-165": "^1.0.0",
     "emojilib": "^2.0.3",
-    "ts-node": "^2.1.0",
-    "typescript": "^4.5.5",
-    "rollup": "^2.60.0",
-    "@rollup/plugin-node-resolve": "^13.0.6",
-    "@rollup/plugin-eslint": "^8.0.1",
     "eslint": "^8.3.0",
     "jsdoc": "^3.6.7",
     "kis-jsdoc-plugin": "^1.4.9",
-    "rimraf": "^3.0.2"
+    "rimraf": "^3.0.2",
+    "rollup": "^2.60.0",
+    "ts-node": "^2.1.0",
+    "typescript": "^5.1.6"
   },
   "repository": {
     "type": "git",
